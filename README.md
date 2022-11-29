@@ -34,4 +34,6 @@ So in this app **you can**:
 - View the catalog
 - Add items to shopping cart
 - Make an order
+- View history of orders
+  View order statuses
 - Navigate to different filters of items (as "Manga", "Films", "Games" etc.)
