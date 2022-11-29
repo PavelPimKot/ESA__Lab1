@@ -7,25 +7,25 @@ Our project is about web app of online store "Geek shop" \
 
 ### Glassfish part
 As database we used MySQL    
-![image](glassfish.jpg)
-![image](glassfish2.jpg)
-![image](glassfish3.jpg)
+![image](images for readme/glassfish.jpg)
+![image](images for readme/glassfish2.jpg)
+![image](images for readme/glassfish3.jpg)
 
 ### DB part
 Here is structure of database:
-![image](БД.png)
-![image](mysql_tables.jpg)
-![image](mysql_connections.jpg)
+![image](images for readme/БД.png)
+![image](images for readme/mysql_tables.jpg)
+![image](images for readme/mysql_connections.jpg)
 
 ### Web views
 Main page:
-![image](main_page.jpg)
+![image](images for readme/main_page.jpg)
 Login page:
-![image](login_page.jpg)
+![image](images for readme/login_page.jpg)
 Registration page:
-![image](registration_page.jpg)
+![image](images for readme/registration_page.jpg)
 Catalog page:
-![image](catalog_page.jpg)
+![image](images for readme/catalog_page.jpg)
 ________
 
 So in this app **you can**:
