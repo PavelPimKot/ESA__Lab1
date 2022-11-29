@@ -2,10 +2,12 @@ package beans.repository.impl;
 
 import beans.repository.StatisticRepository;
 
+import javax.ejb.Singleton;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
+@Singleton
 public class StatisticRepositoryImpl implements StatisticRepository {
     @PersistenceContext(unitName = "myUnit")
     private EntityManager entityManager;

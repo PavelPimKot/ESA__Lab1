@@ -3,8 +3,10 @@ package beans.repository.impl;
 import beans.repository.ClientRepository;
 import entities.Client;
 
+import javax.ejb.Singleton;
 import java.util.List;
 
+@Singleton
 public class ClientRepositoryImpl extends AbstractRepository implements ClientRepository {
     @Override
     public Client getClient(Integer id) {

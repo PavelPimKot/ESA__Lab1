@@ -3,8 +3,10 @@ package beans.repository.impl;
 import beans.repository.ProductRepository;
 import entities.Product;
 
+import javax.ejb.Singleton;
 import java.util.List;
 
+@Singleton
 public class ProductRepositoryImpl extends AbstractRepository implements ProductRepository {
     @Override
     public Product findProductById(Integer productId) {
