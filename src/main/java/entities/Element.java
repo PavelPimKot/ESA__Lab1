@@ -34,12 +34,12 @@ public class Element implements Serializable {
     private Integer code;
 
     @NotNull
-    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
+    @ManyToOne
     @JoinColumn(name = Columns.ORDER)
     private Order order;
 
     @NotNull
-    @OneToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
+    @OneToOne
     @JoinColumn(name = Columns.PRODUCT)
     private Product product;
 

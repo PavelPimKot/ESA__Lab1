@@ -5,9 +5,11 @@ import beans.repository.StatisticRepository;
 import javax.ejb.Singleton;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Singleton
+@Transactional
 public class StatisticRepositoryImpl implements StatisticRepository {
     @PersistenceContext(unitName = "myUnit")
     private EntityManager entityManager;

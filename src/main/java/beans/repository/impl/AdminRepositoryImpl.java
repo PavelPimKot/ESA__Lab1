@@ -4,9 +4,11 @@ import beans.repository.AdminRepository;
 import entities.Admin;
 
 import javax.ejb.Singleton;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Singleton
+@Transactional
 public class AdminRepositoryImpl extends AbstractRepository implements AdminRepository {
     @Override
     public List<Admin> findAdminByLoginAndPassword(String login, String password) {

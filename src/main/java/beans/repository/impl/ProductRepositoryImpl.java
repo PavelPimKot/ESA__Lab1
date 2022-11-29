@@ -4,9 +4,11 @@ import beans.repository.ProductRepository;
 import entities.Product;
 
 import javax.ejb.Singleton;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Singleton
+@Transactional
 public class ProductRepositoryImpl extends AbstractRepository implements ProductRepository {
     @Override
     public Product findProductById(Integer productId) {

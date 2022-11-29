@@ -4,9 +4,11 @@ import beans.repository.ClientRepository;
 import entities.Client;
 
 import javax.ejb.Singleton;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Singleton
+@Transactional
 public class ClientRepositoryImpl extends AbstractRepository implements ClientRepository {
     @Override
     public Client getClient(Integer id) {

@@ -4,9 +4,11 @@ import beans.repository.OrderRepository;
 import entities.Order;
 
 import javax.ejb.Singleton;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Singleton
+@Transactional
 public class OrderRepositoryImpl extends AbstractRepository implements OrderRepository {
     @Override
     public List<Order> getOrdersForAdmin() {

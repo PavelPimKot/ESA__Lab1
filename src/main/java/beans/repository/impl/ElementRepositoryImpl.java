@@ -6,8 +6,10 @@ import entities.Element;
 import javax.ejb.Singleton;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 
 @Singleton
+@Transactional
 public class ElementRepositoryImpl implements ElementRepository {
     @PersistenceContext(unitName = "myUnit")
     protected EntityManager entityManager;

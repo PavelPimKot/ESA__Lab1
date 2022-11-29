@@ -44,10 +44,12 @@ public class BuyItemServlet extends HttpServlet {
         Optional<Order> currOrder = orderList.stream().filter(order -> order.getStatus().equals("In Progress")).findFirst();
         Product product = productService.findProductById(id);
         if (currOrder.isPresent()) {
+            Order order = currOrder.get();
             Element element = new Element();
             element.setCount(1);
-            element.setOrder(currOrder.get());
+            element.setOrder(order);
             element.setProduct(product);
+            req.getSession().setAttribute("currentOrderId", order.getId());
             elementService.save(element);
         } else {
             Order order = new Order();
@@ -65,6 +67,5 @@ public class BuyItemServlet extends HttpServlet {
             elementService.persist(element);
         }
         resp.sendRedirect("items");
-
     }
 }
